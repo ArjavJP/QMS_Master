@@ -31,7 +31,7 @@ The **Institute Management System (IMS)** is a web-based application designed to
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/institute-management-system.git
+   https://github.com/ArjavJP/QMS_Master.git
 2. Open the project in Visual Studio.
 
 3. Set up the database:
