@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - QMSWeb</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/Menu.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/QMSWeb.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+<body>
+       <header>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top mask-custom shadow-0" style ="background-color:peru">
+    <div class="container" >
+      <a class="navbar-brand" href="#!"><span style="color: black;">Institute</span><span style="color: peachpuff;">Managment</span></a>
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+        data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#!">Offer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#!">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#!">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#!">Reference</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#!">About</a>
+          </li>
+          </ul>
+      
+ 
+         <ul class="navbar-nav d-flex flex-row">
+          <li class="nav-item">
+            <a class="nav-link" href="user/Login">Login</a>
+          </li>
+          <li class="nav-item ">
+           <a  class="nav-link"  href="user/Signup">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar -->
+
+  <!--Section: Design Block-->
+  <section>
+    <!-- Intro -->
+    
+      <div class="mask" style="background-color: rgba(250, 182, 162, 0.15);"></div>
+    </div>
+    <!-- Intro -->
+  </section>
+  <!--Section: Design Block-->
+</header>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+<footer class=" text-center text-white"style ="background-color:peachpuff">
+  <!-- Grid container -->
+  <div class="container p-4 pb-0">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a
+        class="btn text-white btn-floating m-1"
+        style="background-color: #3b5998;"
+        href="#!"
+        role="button"
+        ><i class="bi bi-facebook"></i
+      ></a>
+
+      <!-- Twitter -->
+      <a
+        class="btn text-white btn-floating m-1"
+        style="background-color: #55acee;"
+        href="#!"
+        role="button"
+        ><i class="bi bi-twitter"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a
+        class="btn text-white btn-floating m-1"
+        style="background-color: #ac2bac;"
+        href="#!"
+        role="button"
+        ><i class="bi bi-instagram"></i
+      ></a>
+      <!-- Github -->
+      <a
+        class="btn text-white btn-floating m-1"
+        style="background-color: #333333;"
+        href="#!"
+        role="button"
+        ><i class="bi bi-github"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 Copyright:
+    <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/Menu.js" asp-append-version="true"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
